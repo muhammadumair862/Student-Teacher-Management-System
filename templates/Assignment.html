@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment Upload</title>
+</head>
+
+<style>
+    textarea{
+    height:500px;
+    width:80%;
+    background-color:#f1f1f1;
+    }
+    .btn{font-size:14px;
+    padding:10px 15px;
+background-color:dodgerblue;
+color:white;
+border:1px solid dodgerblue;
+}
+</style>
+<body>
+
+<h1>Upload Assignment</h1>
+<form action="/upload" method="POST">
+<textarea name="assignment"></textarea><br>
+<input class="btn" type="submit" name="submit" value="Submit">
+</form>
+</body>
+</html>

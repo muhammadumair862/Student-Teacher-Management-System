@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plagiarism Detection</title>
+</head>
+
+<style>
+input
+{
+font-size:16px;
+margin:10px 10px;
+padding: 5px 5px;
+border-radius:5px;
+}
+
+form
+{
+background-color:#f1f1f1;
+margin:30px 350px;
+padding:20px 200px;}
+
+.btn{padding:5px 78px;
+background-color:dodgerblue;
+color:white;
+border:1px solid dodgerblue;
+}
+
+a{
+color:white;
+background-color:dodgerblue;
+font-size:16px;
+padding:5px 20px;
+border:2px solid dodgerblue;
+}
+</style>
+
+<body>
+<div style="height:70px">
+    <div style="width:80%; float:left"><h1>Plagiarism Detection System</h1></div>
+    <div style="width:10%; float:left; padding:20px 0px "><a href="/login">Login</a></div>
+    <div style="width:10%; float:left; padding:20px 0px "><a href="/adminlogin">Admin</a></div>
+</div>
+
+<h2>Registration Form</h2>
+<br>
+
+<form action="/" method="POST">
+<!--  Select Student or Teacher  -->
+    <div>
+    <input type="radio"  name="option" value="student" required>Student</input>
+    <input type="radio"  name="option" value="teacher" required>Teacher</input>
+    </div>
+
+<!--    -->
+
+    <input type="text" name="id" placeholder="Id" required><br>
+    <input type="text" name="name" placeholder="Name" required><br>
+    <input type="email" name="email" placeholder="Email" required><br>
+    <input type="text" name="phone_number" placeholder="Phone Number" required><br>
+    <input type="text" name="address" placeholder="Address" required><br>
+    <input type="text" name="course" placeholder="Course" required><br>
+    <input type="text" name="username" placeholder="Username" required><br>
+    <input type="password" name="password" placeholder="Password" required><br>
+
+<!--  Submit Button  -->
+    <input class="btn" type="submit" name="submit" value="Submit">
+
+
+
+
+
+</form>
+
+
+</body>
+</html>
